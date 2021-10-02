@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+
+<head>
+<meta charset="UTF-8">
+<title>焕然创作导航页</title>
+<style>
+  body {
+    background-color: #2F3242;
+  }
+  footer {
+    left: 450px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+  }
+  svg {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+  }
+  .message-box {
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: 80px;
+    color: rgb(155, 154, 154);
+    font-size:20px;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+  .message-box h1 {
+    font-size: 60px;
+    line-height: 46px;
+    margin-bottom: 40px;
+  }
+  .buttons-con .action-link-wrap {
+    margin-top: 45px;
+  }
+  .buttons-con .action-link-wrap a {
+    background: #68c950;
+    padding: 8px 30px;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px
+  }
+  .buttons-con .action-link-wrap a:hover {
+    background: #5A5C6C;
+    color: #fff;
+  }
+  
+  #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+    -webkit-animation: float 1s infinite ease-in-out alternate;
+            animation: float 1s infinite ease-in-out alternate;
+  }
+  #Polygon-2 {
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s; 
+  }
+  #Polygon-3 {
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s; 
+  }
+  #Polygon-4 {
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s; 
+  }
+  #Polygon-5 {
+    -webkit-animation-delay: .8s;
+            animation-delay: .8s; 
+  }
+  
+  @-webkit-keyframes float {
+    100% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+  }
+  
+  @keyframes float {
+    100% {
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
+    }
+  }
+  @media (max-width: 450px) {
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -250px;
+      margin-left: -190px;
+    }
+    .message-box {
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -190px;
+      text-align: center;
+    }
+  }
+  </style>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/huanrcz/webimg/Huanrcz/1.ico" sizes="32x32">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/huanrcz/webimg/Huanrcz/1.ico" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/huanrcz/webimg/Huanrcz/1.ico">
+  <meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/huanrcz/webimg/Huanrcz/1.ico">
+</head>
+
+<body>
+    <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
+    </g>
+    </svg>
+    <div class="message-box">
+    <div class="buttons-con">
+    <div class="action-link-wrap"><p id="label1"></p><p id="label2"></p><a class="link-button" id="redirect1"></a><a class="link-button" id="redirect2"></a><p id="label3"></p><a class="link-button" id="redirect3"></a><a class="link-button" id="redirect4"></a><p id="label4"></p><a class="link-button" id="redirect5"></a><a class="link-button" id="redirect6"></a><p id="label5"></p><a class="link-button" id="redirect7"></a><a class="link-button" id="redirect8"></a></div>
+    </div>
+	</div>
+	<script>var _0x7964=["\x63\x69\x74\x79","\x61\x64\x64\x72\x65\x73\x73\x5F\x64\x65\x74\x61\x69\x6C","\x63\x6F\x6E\x74\x65\x6E\x74"];var bundler;function get_bundler(_0x925ex3){if(_0x925ex3){bundler= _0x925ex3[_0x7964[2]][_0x7964[1]][_0x7964[0]]}}</script>
+	<script src="https://api.map.baidu.com/location/ip?ak=t2GjHMMRk12Z6XrQPKaXtHDKkYynIQLp&callback=get_bundler"></script>
+	<script>var _0x7434=["\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x6C\x61\x62\x65\x6C\x31","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x3C\x66\x6F\x6E\x74\x20\x63\x6F\x6C\x6F\x72\x3D\x22\x77\x68\x69\x74\x65\x22\x20\x73\x69\x7A\x65\x3D\x22\x36\x22\x3E\x48\x75\x61\x6E\x72\x63\x7A\x20\x48\x6F\x6D\x65\x20\x50\x61\x67\x65\x3C\x2F\x66\x6F\x6E\x74\x3E","\x6C\x61\x62\x65\x6C\x32","\x57\x65\x62\x5F\x53\x69\x74\x65\x20\x31\x20\x2D\x20\x32","\x6C\x61\x62\x65\x6C\x33","\x57\x65\x62\x5F\x53\x69\x74\x65\x20\x33\x20\x2D\x20\x34","\x6C\x61\x62\x65\x6C\x34","\x57\x65\x62\x5F\x53\x69\x74\x65\x20\x35\x20\x2D\x20\x36","\x6C\x61\x62\x65\x6C\x35","\x57\x65\x62\x5F\x53\x69\x74\x65\x20\x37\x20\x2D\x20\x38","\x72\x65\x64\x69\x72\x65\x63\x74\x31","\x48\x75\x61\x6E\x72\x63\x7A","\x72\x65\x64\x69\x72\x65\x63\x74\x32","\x69\x50\x72\x6F\x63\x65\x64\x69\x74\x6F\x72","\x72\x65\x64\x69\x72\x65\x63\x74\x33","\x48\x75\x61\x6E\x72\x4F\x4A","\x72\x65\x64\x69\x72\x65\x63\x74\x34","\x48\x75\x61\x6E\x72\x43\x6C\x6F\x75\x64","\x72\x65\x64\x69\x72\x65\x63\x74\x35","\x42\x6C\x6F\x67","\x72\x65\x64\x69\x72\x65\x63\x74\x36","\x50\x6C\x61\x6E\x74\x73\x20\x56\x53\x20\x5A\x6F\x6D\x62\x69\x65\x73","\x72\x65\x64\x69\x72\x65\x63\x74\x37","\x43\x75\x74\x20\x46\x72\x75\x69\x74","\x72\x65\x64\x69\x72\x65\x63\x74\x38","\x43\x68\x69\x6E\x65\x73\x65\x20\x43\x68\x65\x73\x73","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\u676D\u5DDE\u5E02","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x31\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x32\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x33\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x34\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x35\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x37\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x38\x30","\x68\x74\x74\x70\x3A\x2F\x2F\x38\x31\x2E\x36\x38\x2E\x32\x33\x35\x2E\x37\x3A\x32\x30\x39\x30","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x69\x64\x75\x2E\x63\x6F\x6D"];document[_0x7434[2]](_0x7434[1])[_0x7434[0]]= _0x7434[3];document[_0x7434[2]](_0x7434[4])[_0x7434[0]]= _0x7434[5];document[_0x7434[2]](_0x7434[6])[_0x7434[0]]= _0x7434[7];document[_0x7434[2]](_0x7434[8])[_0x7434[0]]= _0x7434[9];document[_0x7434[2]](_0x7434[10])[_0x7434[0]]= _0x7434[11];document[_0x7434[2]](_0x7434[12])[_0x7434[0]]= _0x7434[13];document[_0x7434[2]](_0x7434[14])[_0x7434[0]]= _0x7434[15];document[_0x7434[2]](_0x7434[16])[_0x7434[0]]= _0x7434[17];document[_0x7434[2]](_0x7434[18])[_0x7434[0]]= _0x7434[19];document[_0x7434[2]](_0x7434[20])[_0x7434[0]]= _0x7434[21];document[_0x7434[2]](_0x7434[22])[_0x7434[0]]= _0x7434[23];document[_0x7434[2]](_0x7434[24])[_0x7434[0]]= _0x7434[25];document[_0x7434[2]](_0x7434[26])[_0x7434[0]]= _0x7434[27];function bundle(_0xa7f1x2){window[_0x7434[29]][_0x7434[28]]= _0xa7f1x2}if(bundler== _0x7434[30]){document[_0x7434[2]](_0x7434[12])[_0x7434[28]]= _0x7434[31];document[_0x7434[2]](_0x7434[14])[_0x7434[28]]= _0x7434[32];document[_0x7434[2]](_0x7434[16])[_0x7434[28]]= _0x7434[33];document[_0x7434[2]](_0x7434[18])[_0x7434[28]]= _0x7434[34];document[_0x7434[2]](_0x7434[20])[_0x7434[28]]= _0x7434[35];document[_0x7434[2]](_0x7434[22])[_0x7434[28]]= _0x7434[36];document[_0x7434[2]](_0x7434[24])[_0x7434[28]]= _0x7434[37];document[_0x7434[2]](_0x7434[26])[_0x7434[28]]= _0x7434[38]}else {document[_0x7434[2]](_0x7434[12])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[14])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[16])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[18])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[20])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[22])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[24])[_0x7434[28]]= _0x7434[39];document[_0x7434[2]](_0x7434[26])[_0x7434[28]]= _0x7434[39]}</script>
+</body>
+<footer>
+	<h4 id="foot"><h4>
+	<script>var _0xcb29=["\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x66\x6F\x6F\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x3C\x66\x6F\x6E\x74\x20\x63\x6F\x6C\x6F\x72\x3D\x77\x68\x69\x74\x65\x3E\x3C\x63\x65\x6E\x74\x65\x72\x3E\x43\x6F\x70\x79\x72\x69\x67\x68\x74\x20\xA9\x20\x32\x30\x32\x31\x20\x48\x75\x61\x6E\x72\x63\x7A\x2E\x20\x41\x6C\x6C\x20\x72\x69\x67\x68\x74\x73\x20\x72\x65\x73\x65\x72\x76\x65\x64\x2E\x3C\x2F\x63\x65\x6E\x74\x65\x72\x3E\x3C\x2F\x66\x6F\x6E\x74\x3E"];document[_0xcb29[2]](_0xcb29[1])[_0xcb29[0]]= _0xcb29[3]</script>
+</footer>
+</html>
